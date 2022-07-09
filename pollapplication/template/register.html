@@ -1,0 +1,42 @@
+ <div class="collapse navbar-collapse navbar-ex1-collapse">
+                    <ul class="nav navbar-nav">
+                       
+                        <li><a href="/login/">Login</a></li>
+                        
+                    </div>
+<div class="text-center">
+                
+    <h1 class="mt-2 mb-5">Register Here(For New Users)</h1>
+</div>            
+	<form  action="/registercode/" method="post" enctype="multipart/form-data">
+         {% csrf_token %}
+         	<div class="form-row">
+            <div class="col-md-12">
+                <div class="control-group">
+                    <input type="text" class="form-control p-4" id="name" placeholder="Your Name" required="required" data-validation-required-message="Please enter your name" name="t1"/>
+                <p class="help-block text-danger"></p>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="control-group">
+                    <input type="text" class="form-control p-4" id="email" placeholder="Email" required="required" data-validation-required-message="Please enter your email" name="t2" />
+                    <p class="help-block text-danger"></p>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="control-group">
+                    <input type="password" class="form-control p-4" id="email" placeholder="Password" required="required" data-validation-required-message="Please enter password" name="t3" />
+                        <p class="help-block text-danger"></p>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="control-group">
+                    <input type="text" class="form-control" rows="1" id="phoneno" placeholder="Enter your phone number" required="required" data-validation-required-message="Please enter your phone no" maxlength="10" name="t4"></textarea>
+                    <p class="help-block text-danger"></p>
+                </div>
+            </div>
+            <div>
+                <button class="btn btn-primary font-weight-semi-bold px-4" style="height: 50px;" type="submit" id="submit">Submit</button>
+            </div>
+    </form>
+          

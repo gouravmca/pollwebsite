@@ -1,0 +1,50 @@
+{%load static %}
+<!DOCTYPE html>
+
+
+    <!-- Login Start -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="text-center">
+               
+                <h1 class="mt-2 mb-5" align="center">Login Here( For Registerd Users)</h1>
+            </div>
+        </div>
+                <div class="col-md-7">
+                    <div class="login-form">
+                        <div id="success"></div>
+                        <form  action="/logincode/" method="post" class="text-center">
+                                {% csrf_token %}
+                                <div class="form-row" >
+                                </div>
+                                <div class="col-md-12" >
+                                    <div class="text-center" class="control-group">
+                                        <input type="email" class="form-control p-4" id="email" placeholder="Your Email" required="required" data-validation-required-message="Please enter your email"  name="t1" />
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                            <div class="control-group">
+                                <input type="password" class="form-control p-4" id="password" placeholder="PASSWORD" required="required" data-validation-required-message="Please enter your password" name="t2" />
+                                        <p class="help-block text-danger"></p>
+                            </div>
+                           
+                            <div>
+                                <button class="btn btn-primary font-weight-semi-bold px-4" style="height: 50px;" type="login" id="login">Login</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Login End -->
+
+
+    <!-- Footer Start -->
+
+  
+
+
+    
